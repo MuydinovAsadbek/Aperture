@@ -1,0 +1,71 @@
+:root {
+  --primary:#c0c0c0;
+  --text-color:#fff;
+  --main-font:'Poppins', 'Arial', sans-serif;
+}
+
+/* GLOBAL */
+ * {
+  box-sizing: border-box;
+}
+
+/* GLOBAL FOCUS */
+*:focus {
+  outline: 2px dashed #7296ec;
+  outline-offset: 3px;
+  transition: 0.4s ease;
+}
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  font-family: var(--main-font);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 22px;
+  background-color: #000;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+ /* CONTAINER */
+ .container {
+  width: 100%;
+  max-width: 1100px;
+  padding-left: 50px;
+  padding-right: 50px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+/* BUTTON */
+.button {
+  width: 260px;
+  padding: 9px 10px;
+  align-items: center;
+  background-color: var(--primary);
+  font-style: normal;
+  font-weight: 700;
+  line-height: 150%;
+  text-transform: uppercase;
+  text-decoration: none;
+  border: 0;
+  transition: 0.5 ease;
+}
+.button::before {
+  width: 50px;
+  height: 100px;
+  background-color: #000;
+  border-radius: 50px;
+}
